@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Kwame Nkrumah Tribute page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+
+  padding: 15px;
+}
+
+.left-menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+
+}
+.right-menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+
+}
+.main {
+  width: 50%;
+  float: left;
+  padding: 15px;
+
+}
+.red-border {
+    border: 1px solid red;
+}
+.blue-border {
+    border: 1px solid blue;
+}
+.yellow-border {
+    border: 1px solid rgb(255, 251, 0);
+}
+
+.photo {
+    width: 100%;
+}
+.photo img {
+    width: 100%;
+}
+footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+</style>
+</head> 
+<body>
+
+<div class="header red-border">
+    <header>
+        <h1>Kwame Nkrumah Tribute page</h1>
+        <p id="date">kjfngkjnbkx</p>
+    </header>
+</div>
+
+<div class="left-menu blue-border">
+  <ul>
+    <li>Intro</li>
+    <li>Gold Coast</li>
+    <li>United States</li>
+    <li>London</li>
+  </ul>
+</div>
+
+<div class="main blue-border">
+  <h2>Intro</h2>
+  <p>Kwame Nkrumah PC (21 September 1909 - 27 April 1972) was a Ghanaian politician, political theorist, and revolutionary. He was the first Prime Minister and President of Ghana, having led the Gold Coast to independence from Britain in 1957.</p>
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+    <div class="photo black border">
+        <img src="https://pbs.twimg.com/profile_images/1433554807432876032/dhK8qFMI_400x400.jpg" alt="Kwame Nkrumah">
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Kwame_Nkrumah" target="_blank">Visit Wikipedia page of Kwame Nkrumah</a>
+    <div>
+      <p> date of death 1960</p>
+    </div>
+</div>
+
+<div class="right-menu yellow-border">
+    <ul>
+      <li>
+        
+        <p><strong>Did You Know?</strong></p>
+        
+        <p>Nkrumah is played by which actor in the Netflix television series The Crown?</p>
+        
+        <button type="button" onclick="myFunction()">Click Me!</button>
+        
+        <p id="demo">Answer.</p>
+        </li>
+      <li>Ghanaian Independence</li>
+      <li>Overthrow</li>
+      <li>Death</li>
+    </ul>
+  </div>
+  <footer>
+    <p>Portions of this content are ©2022</p>
+  </footer>
+
+  <script>
+    document.getElementById("date").innerHTML = Date();
+
+    function myFunction() { 
+          document.getElementById("demo").innerHTML = "Nkrumah is played by Danny Sapani in the Netflix television series The Crown";
+    }
+</script>
+</body>
+</html>
+
+
+
