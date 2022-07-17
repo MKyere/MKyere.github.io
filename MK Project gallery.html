@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Project Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+
+  padding: 15px;
+}
+
+/* .left-menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+
+}
+.right-menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+
+} */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container {
+ background-color: dodgerblue;
+ flex-grow: 1;
+ margin: 10px  10px;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+/* .red-border {
+    border: 1px solid red;
+}
+.blue-border {
+    border: 1px solid blue;
+}
+.yellow-border {
+    border: 1px solid rgb(255, 251, 0);
+}
+
+.photo {
+    width: 100%;
+}
+.photo img {
+    width: 100%;
+}
+footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+} */
+</style>
+</head> 
+<body>
+
+<!-- <div class="header red-border">
+    <header>
+        <h1>Kwame Nkrumah Tribute page</h1>
+        <p id="date">kjfngkjnbkx</p>
+    </header>
+</div> -->
+
+
+<div class="flex-container">
+    <!-- first row -->
+    <div class="card-container">
+        <div>
+            <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+        </div>
+        <div>
+          <div class="toggle-area">
+            <h4><b>Tribute Page</b></h4> 
+            <p>Dr Kwame Nkrumah</p>
+          </div>
+          <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+        </div>
+    </div>
+
+    <div class="card-container">
+      <div>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+      </div>
+      <div>
+        <div class="toggle-area">
+          <h4><b>Project Gallery</b></h4> 
+          <p>Cards</p>
+        </div>
+        <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+      </div>
+      <div>
+        <div class="toggle-area">
+          <h4><b>Project Gallery</b></h4> 
+          <p>Cards</p>
+        </div>
+        <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+      </div>
+    </div>
+    <!-- end of first row  -->
+</div>
+
+<div class="flex-container">
+    <!-- second row -->
+    <div class="card-container">
+      <div>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+      </div>
+      <div>
+        <div class="toggle-area">
+          <h4><b>Project Gallery</b></h4> 
+          <p>Cards</p>
+        </div>
+        <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+      </div>
+      <div>
+        <div class="toggle-area">
+          <h4><b>Project Gallery</b></h4> 
+          <p>description</p>
+        </div>
+        <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div>
+        <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1820cb50f77%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1820cb50f77%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.1953125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Avatar" style="width:100%">
+      </div>
+      <div>
+        <div class="toggle-area">
+          <h4><b>Project Gallery</b></h4> 
+          <p>Cards</p>
+        </div>
+        <button type="button" onclick="$(this).parent().find('.toggle-area').toggle();">Toggle description</button>
+      </div>
+    </div>
+    <!-- end of second row -->
+
+</div>
+
+  <footer>
+    <p>Portions of this content are ©2022</p>
+  </footer>
+
+  <script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    
+  });
+});
+</script>
+</body>
+</html>
+
+
+
